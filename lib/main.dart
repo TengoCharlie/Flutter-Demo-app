@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Home(),
-));
+      home: Home(),
+    ));
 
 class Home extends StatelessWidget {
   @override
@@ -11,17 +11,16 @@ class Home extends StatelessWidget {
       appBar: AppBar(
           title: Text('my first app'),
           centerTitle: true,
-          backgroundColor: Colors.red[600]
-      ),
+          backgroundColor: Colors.red[600]),
       body: Center(
         child: Image.asset('assets/two.jpg'),
+        // child: Image(image: AssetImage('/assets/one.jpg'), image: NetworkImage('URL')),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.red[600],
-        onPressed: () {  },
+        onPressed: () {},
         child: Text('click'),
       ),
     );
   }
 }
-
